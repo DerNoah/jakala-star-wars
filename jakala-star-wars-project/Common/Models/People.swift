@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct People {
+struct People: Hashable {
     let id: UUID
     let name: String
     let height: Int
@@ -17,7 +17,7 @@ struct People {
     let eyeColor: String
     let birthYear: String
     let gender: Gender?
-    let homeworldURL: URL
+    let homeworldURL: URL?
 }
 
 enum Gender: String {

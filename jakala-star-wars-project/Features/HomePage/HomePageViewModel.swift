@@ -33,7 +33,8 @@ final class HomePageViewModel: ObservableObject {
     }
     
     func onListItemTapped(itemModel: ListItemView.Model) {
-        coordinator.push(destination: DetailPageDestination())
+        guard let selectedPeople = fetchedPeople.first(where: { $0.id == itemModel.id }) else { return } // TODO: error handling
+        coordinator.push(destination: DetailPageDestination(arguments: .init(people: selectedPeople)))
     }
     
     func searchStringChanged(_ searchString: String) {

@@ -28,6 +28,8 @@
 		4F68DF602C9055D4004A88BA /* DetailPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF5F2C9055D4004A88BA /* DetailPageViewModel.swift */; };
 		4F68DF622C90561C004A88BA /* DetailPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF612C90561C004A88BA /* DetailPageView.swift */; };
 		4F68DF652C90564A004A88BA /* DestinationIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF642C90564A004A88BA /* DestinationIdentifier.swift */; };
+		4F68DF672C906A13004A88BA /* DetailPageViewModelArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF662C906A13004A88BA /* DetailPageViewModelArguments.swift */; };
+		4F68DF692C906A8E004A88BA /* DetailPageViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF682C906A8E004A88BA /* DetailPageViewState.swift */; };
 		4F82B35B2C903E84003CD5FD /* jakala_star_wars_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F82B35A2C903E84003CD5FD /* jakala_star_wars_projectApp.swift */; };
 		4F82B35D2C903E84003CD5FD /* ProjectRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F82B35C2C903E84003CD5FD /* ProjectRootView.swift */; };
 		4F82B35F2C903E86003CD5FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F82B35E2C903E86003CD5FD /* Assets.xcassets */; };
@@ -55,6 +57,8 @@
 		4F68DF5F2C9055D4004A88BA /* DetailPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewModel.swift; sourceTree = "<group>"; };
 		4F68DF612C90561C004A88BA /* DetailPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageView.swift; sourceTree = "<group>"; };
 		4F68DF642C90564A004A88BA /* DestinationIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationIdentifier.swift; sourceTree = "<group>"; };
+		4F68DF662C906A13004A88BA /* DetailPageViewModelArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewModelArguments.swift; sourceTree = "<group>"; };
+		4F68DF682C906A8E004A88BA /* DetailPageViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewState.swift; sourceTree = "<group>"; };
 		4F82B3572C903E84003CD5FD /* jakala-star-wars-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jakala-star-wars-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F82B35A2C903E84003CD5FD /* jakala_star_wars_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jakala_star_wars_projectApp.swift; sourceTree = "<group>"; };
 		4F82B35C2C903E84003CD5FD /* ProjectRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectRootView.swift; sourceTree = "<group>"; };
@@ -184,6 +188,8 @@
 				4F68DF5B2C9055C7004A88BA /* DetailPageDestination.swift */,
 				4F68DF612C90561C004A88BA /* DetailPageView.swift */,
 				4F68DF5F2C9055D4004A88BA /* DetailPageViewModel.swift */,
+				4F68DF682C906A8E004A88BA /* DetailPageViewState.swift */,
+				4F68DF662C906A13004A88BA /* DetailPageViewModelArguments.swift */,
 			);
 			path = DetailPage;
 			sourceTree = "<group>";
@@ -317,8 +323,10 @@
 				4F68DF652C90564A004A88BA /* DestinationIdentifier.swift in Sources */,
 				4F82B35B2C903E84003CD5FD /* jakala_star_wars_projectApp.swift in Sources */,
 				4F68DF3A2C903F8F004A88BA /* DependencyInjection.swift in Sources */,
+				4F68DF692C906A8E004A88BA /* DetailPageViewState.swift in Sources */,
 				4F68DF3C2C903FEE004A88BA /* HomePageView.swift in Sources */,
 				4F68DF382C903F8F004A88BA /* DependencyFactory.swift in Sources */,
+				4F68DF672C906A13004A88BA /* DetailPageViewModelArguments.swift in Sources */,
 				4F68DF532C904693004A88BA /* PeopleListResponseModel.swift in Sources */,
 				4F68DF622C90561C004A88BA /* DetailPageView.swift in Sources */,
 				4F68DF482C90418D004A88BA /* APIClient.swift in Sources */,

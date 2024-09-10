@@ -11,7 +11,9 @@ import SUICoordinator
 struct DetailPageDestination: Destination {
     let identifier = PageIdentifier.detailPage
     
+    let arguments: DetailPageViewModelArguments
+    
     func makeView(with dependencies: DependencyContainer, coordinator: any Coordinator) -> DetailPageView {
-        DetailPageView(viewModel: DetailPageViewModel())
+        DetailPageView(viewModel: DetailPageViewModel(arguments: arguments))
     }
 }
