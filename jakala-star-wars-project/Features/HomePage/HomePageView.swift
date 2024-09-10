@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomePageView: View {
-    @ObservedObject var viewModel: HomePageViewModel
+    @StateObject var viewModel: HomePageViewModel
     
     var body: some View {
         List(viewModel.viewState.listItems) { model in
@@ -22,7 +22,7 @@ struct HomePageView: View {
         .searchable(text: $viewModel.viewState.searchString)
         .listStyle(.plain)
         .animation(.default, value: viewModel.viewState.listItems)
-        .onChange(of: viewModel.viewState.searchString) { _, newValue in viewModel.searchStringChanged(newValue)}
+        .onChange(of: viewModel.viewState.searchString) { _, newValue in viewModel.searchStringChanged(newValue) }
         .onAppear(perform: viewModel.onAppear)
     }
 }

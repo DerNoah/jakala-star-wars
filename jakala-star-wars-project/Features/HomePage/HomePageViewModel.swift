@@ -32,7 +32,9 @@ final class HomePageViewModel: ObservableObject {
         fetchPeople()
     }
     
-    func onListItemTapped(itemModel: ListItemView.Model) {}
+    func onListItemTapped(itemModel: ListItemView.Model) {
+        coordinator.push(destination: DetailPageDestination())
+    }
     
     func searchStringChanged(_ searchString: String) {
         updateViewState()
@@ -45,6 +47,8 @@ final class HomePageViewModel: ObservableObject {
     }
     
     private func fetchPeople() {
+        guard fetchedPeople.isEmpty else { return }
+        
         fetchTask?.cancel()
         fetchTask = Task {
             do {
