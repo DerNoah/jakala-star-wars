@@ -47,13 +47,6 @@ final class PeopleListService {
         }
     }
     
-    func fetchPeople() async throws -> [People] {
-        let peopleResponse = try await apiRepo.fetchPeopleList()
-        let mappedPeople = mapPeopleResponse(people: peopleResponse.results)
-        
-        return mappedPeople
-    }
-    
     private func mapPeopleResponse(people: [PeopleListResponseModel.People]) -> [People] {
         people.compactMap { people -> People? in
             guard let height = Int(people.height),
