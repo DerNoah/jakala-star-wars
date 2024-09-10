@@ -34,7 +34,7 @@ final class PreviewCoordinator: Coordinator {
 extension PreviewCoordinator: DependencyIdentifier {
     static var dependencyValue: DependencyFactory<PreviewCoordinator> {
         DependencyFactory { _ in
-            PreviewCoordinator()
+            PreviewCoordinator(navigationPath: .init())
         }
     }
 }

@@ -30,6 +30,11 @@ struct HomePageView: View {
 
 #if DEBUG
 #Preview {
-    HomePageView(viewModel: HomePageViewModel(coordinator: previewDependencyContainer.resolve(PreviewCoordinator.self)))
+    HomePageView(
+        viewModel: HomePageViewModel(
+            coordinator: previewDependencyContainer.resolve(PreviewCoordinator.self),
+            peopleListService: previewDependencyContainer.resolve(PeopleListService.self)
+        )
+    )
 }
 #endif

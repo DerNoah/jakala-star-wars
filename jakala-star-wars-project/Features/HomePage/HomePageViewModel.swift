@@ -10,11 +10,13 @@ import SUICoordinator
 
 final class HomePageViewModel: ObservableObject {
     private let coordinator: any Coordinator
+    private let peopleListService: PeopleListService
     
     @Published var viewState: HomePageViewState = .init()
     
-    init(coordinator: any Coordinator) {
+    init(coordinator: any Coordinator, peopleListService: PeopleListService) {
         self.coordinator = coordinator
+        self.peopleListService = peopleListService
     }
     
     func onAppear() {}

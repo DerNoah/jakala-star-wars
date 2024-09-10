@@ -14,8 +14,14 @@ struct ProjectRootView: View {
     var body: some View {
         NavigationCoordinatorView(
             dependencies: dependencyContainer,
-            rootView: { coordinator in
-                HomePageView(viewModel: HomePageViewModel(coordinator: coordinator))
+            rootView: {
+                coordinator in
+                HomePageView(
+                    viewModel: HomePageViewModel(
+                        coordinator: coordinator,
+                        peopleListService: dependencyContainer.resolve(PeopleListService.self)
+                    )
+                )
             }
         )
     }
