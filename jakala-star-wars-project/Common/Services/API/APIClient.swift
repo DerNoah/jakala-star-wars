@@ -8,8 +8,8 @@
 import Foundation
 
 final class APIClient {
-    let session = URLSession(configuration: .default)
-    let decoder = JSONDecoder()
+    private let session = URLSession(configuration: .default)
+    private let decoder = JSONDecoder()
     
     func request<Response: Decodable>(_ url: URL) async throws -> Response {
         let request = URLRequest(url: url)
