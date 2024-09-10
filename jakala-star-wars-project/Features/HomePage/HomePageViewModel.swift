@@ -11,7 +11,15 @@ import SUICoordinator
 final class HomePageViewModel: ObservableObject {
     private let coordinator: any Coordinator
     
+    @Published var viewState: HomePageViewState = .init()
+    
     init(coordinator: any Coordinator) {
         self.coordinator = coordinator
+    }
+    
+    func onAppear() {}
+    
+    func onListItemTapped(itemModel: ListItemView.Model) {
+        
     }
 }

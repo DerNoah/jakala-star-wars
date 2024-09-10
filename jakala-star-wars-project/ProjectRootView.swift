@@ -5,8 +5,8 @@
 //  Created by Noah Plützer on 10.09.24.
 //
 
-import SwiftUI
 import SUICoordinator
+import SwiftUI
 
 struct ProjectRootView: View {
     let dependencyContainer = DependencyContainer(environment: .prod)
@@ -24,3 +24,7 @@ struct ProjectRootView: View {
 #Preview {
     ProjectRootView()
 }
+
+#if DEBUG
+let previewDependencyContainer = DependencyContainer(environment: .preview)
+#endif
