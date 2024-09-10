@@ -19,7 +19,8 @@ struct ProjectRootView: View {
                 HomePageView(
                     viewModel: HomePageViewModel(
                         coordinator: coordinator,
-                        peopleListService: dependencyContainer.resolve(PeopleListService.self)
+                        peopleListService: dependencyContainer.resolve(PeopleListService.self),
+                        peopleFilterService: dependencyContainer.resolve(PeopleFilterService.self)
                     )
                 )
             }

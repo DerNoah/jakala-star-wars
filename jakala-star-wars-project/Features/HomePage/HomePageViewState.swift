@@ -9,4 +9,5 @@ import Foundation
 
 struct HomePageViewState: Hashable {
     var listItems: [ListItemView.Model] = []
+    var searchString: String = ""
 }

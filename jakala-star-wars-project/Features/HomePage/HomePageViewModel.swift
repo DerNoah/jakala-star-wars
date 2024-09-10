@@ -11,15 +11,21 @@ import SUICoordinator
 final class HomePageViewModel: ObservableObject {
     private let coordinator: any Coordinator
     private let peopleListService: PeopleListService
+    private let peopleFilterService: PeopleFilterService
     
     @Published var viewState: HomePageViewState = .init()
     
     private var fetchTask: Task<Void, Never>?
     private var fetchedPeople: [People] = []
     
-    init(coordinator: any Coordinator, peopleListService: PeopleListService) {
+    init(
+        coordinator: any Coordinator,
+        peopleListService: PeopleListService,
+        peopleFilterService: PeopleFilterService
+    ) {
         self.coordinator = coordinator
         self.peopleListService = peopleListService
+        self.peopleFilterService = peopleFilterService
     }
     
     func onAppear() {
@@ -27,6 +33,16 @@ final class HomePageViewModel: ObservableObject {
     }
     
     func onListItemTapped(itemModel: ListItemView.Model) {}
+    
+    func searchStringChanged(_ searchString: String) {
+        updateViewState()
+    }
+    
+    private func updateViewState() {
+        let filteredRowModels = peopleFilterService.filterPeopleBy(\.name, people: fetchedPeople, searchString: viewState.searchString)
+        let mappedRowModels = mapPeopleIntoRowModels(filteredRowModels)
+        viewState.listItems = mappedRowModels
+    }
     
     private func fetchPeople() {
         fetchTask?.cancel()
@@ -43,9 +59,8 @@ final class HomePageViewModel: ObservableObject {
     
     @MainActor
     private func peopleFetched(people: [People]) {
-        self.fetchedPeople = people
-        let mappedRowModels = mapPeopleIntoRowModels(people)
-        viewState.listItems = mappedRowModels
+        fetchedPeople = people
+        updateViewState()
     }
     
     private func mapPeopleIntoRowModels(_ people: [People]) -> [ListItemView.Model] {
