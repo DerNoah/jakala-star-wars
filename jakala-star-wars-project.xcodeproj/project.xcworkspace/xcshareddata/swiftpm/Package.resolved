@@ -1,0 +1,15 @@
+{
+  "originHash" : "c6ce27b87384338e93b8dba71c03c1137bbf9f3db43b210459111555de2319e3",
+  "pins" : [
+    {
+      "identity" : "suicoordinator",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/DerNoah/SUICoordinator",
+      "state" : {
+        "branch" : "main",
+        "revision" : "3f3891c867d443ee5c694deb0b4992005c5fb961"
+      }
+    }
+  ],
+  "version" : 3
+}

@@ -11,7 +11,7 @@ import SwiftUI
 struct jakala_star_wars_projectApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ProjectRootView()
         }
     }
 }

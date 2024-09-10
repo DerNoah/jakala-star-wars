@@ -7,16 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F68DF2E2C903F18004A88BA /* SUICoordinator in Frameworks */ = {isa = PBXBuildFile; productRef = 4F68DF2D2C903F18004A88BA /* SUICoordinator */; };
+		4F68DF362C903F8F004A88BA /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF2F2C903F8F004A88BA /* DependencyContainer.swift */; };
+		4F68DF372C903F8F004A88BA /* DependencyEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF302C903F8F004A88BA /* DependencyEnvironment.swift */; };
+		4F68DF382C903F8F004A88BA /* DependencyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF312C903F8F004A88BA /* DependencyFactory.swift */; };
+		4F68DF392C903F8F004A88BA /* DependencyIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF322C903F8F004A88BA /* DependencyIdentifier.swift */; };
+		4F68DF3A2C903F8F004A88BA /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF332C903F8F004A88BA /* DependencyInjection.swift */; };
+		4F68DF3C2C903FEE004A88BA /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF3B2C903FEE004A88BA /* HomePageView.swift */; };
+		4F68DF3F2C904031004A88BA /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF3E2C904031004A88BA /* HomePageViewModel.swift */; };
+		4F68DF432C904117004A88BA /* JediListApiRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF422C904117004A88BA /* JediListApiRepo.swift */; };
+		4F68DF452C90411F004A88BA /* JediListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF442C90411F004A88BA /* JediListService.swift */; };
 		4F82B35B2C903E84003CD5FD /* jakala_star_wars_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F82B35A2C903E84003CD5FD /* jakala_star_wars_projectApp.swift */; };
-		4F82B35D2C903E84003CD5FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F82B35C2C903E84003CD5FD /* ContentView.swift */; };
+		4F82B35D2C903E84003CD5FD /* ProjectRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F82B35C2C903E84003CD5FD /* ProjectRootView.swift */; };
 		4F82B35F2C903E86003CD5FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F82B35E2C903E86003CD5FD /* Assets.xcassets */; };
 		4F82B3622C903E86003CD5FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F82B3612C903E86003CD5FD /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F68DF2F2C903F8F004A88BA /* DependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		4F68DF302C903F8F004A88BA /* DependencyEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyEnvironment.swift; sourceTree = "<group>"; };
+		4F68DF312C903F8F004A88BA /* DependencyFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyFactory.swift; sourceTree = "<group>"; };
+		4F68DF322C903F8F004A88BA /* DependencyIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyIdentifier.swift; sourceTree = "<group>"; };
+		4F68DF332C903F8F004A88BA /* DependencyInjection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
+		4F68DF3B2C903FEE004A88BA /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		4F68DF3E2C904031004A88BA /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
+		4F68DF422C904117004A88BA /* JediListApiRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JediListApiRepo.swift; sourceTree = "<group>"; };
+		4F68DF442C90411F004A88BA /* JediListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JediListService.swift; sourceTree = "<group>"; };
 		4F82B3572C903E84003CD5FD /* jakala-star-wars-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jakala-star-wars-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F82B35A2C903E84003CD5FD /* jakala_star_wars_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jakala_star_wars_projectApp.swift; sourceTree = "<group>"; };
-		4F82B35C2C903E84003CD5FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4F82B35C2C903E84003CD5FD /* ProjectRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectRootView.swift; sourceTree = "<group>"; };
 		4F82B35E2C903E86003CD5FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F82B3612C903E86003CD5FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -26,12 +45,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F68DF2E2C903F18004A88BA /* SUICoordinator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F68DF342C903F8F004A88BA /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				4F68DF2F2C903F8F004A88BA /* DependencyContainer.swift */,
+				4F68DF302C903F8F004A88BA /* DependencyEnvironment.swift */,
+				4F68DF312C903F8F004A88BA /* DependencyFactory.swift */,
+				4F68DF322C903F8F004A88BA /* DependencyIdentifier.swift */,
+				4F68DF332C903F8F004A88BA /* DependencyInjection.swift */,
+			);
+			path = DependencyInjection;
+			sourceTree = "<group>";
+		};
+		4F68DF352C903F8F004A88BA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4F68DF402C9040F2004A88BA /* Services */,
+				4F68DF342C903F8F004A88BA /* DependencyInjection */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4F68DF3D2C904024004A88BA /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				4F68DF3B2C903FEE004A88BA /* HomePageView.swift */,
+				4F68DF3E2C904031004A88BA /* HomePageViewModel.swift */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		4F68DF402C9040F2004A88BA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4F68DF412C9040FE004A88BA /* JediList */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4F68DF412C9040FE004A88BA /* JediList */ = {
+			isa = PBXGroup;
+			children = (
+				4F68DF422C904117004A88BA /* JediListApiRepo.swift */,
+				4F68DF442C90411F004A88BA /* JediListService.swift */,
+			);
+			path = JediList;
+			sourceTree = "<group>";
+		};
 		4F82B34E2C903E84003CD5FD = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +118,10 @@
 		4F82B3592C903E84003CD5FD /* jakala-star-wars-project */ = {
 			isa = PBXGroup;
 			children = (
+				4F68DF352C903F8F004A88BA /* Common */,
 				4F82B35A2C903E84003CD5FD /* jakala_star_wars_projectApp.swift */,
-				4F82B35C2C903E84003CD5FD /* ContentView.swift */,
+				4F82B35C2C903E84003CD5FD /* ProjectRootView.swift */,
+				4F68DF3D2C904024004A88BA /* HomePage */,
 				4F82B35E2C903E86003CD5FD /* Assets.xcassets */,
 				4F82B3602C903E86003CD5FD /* Preview Content */,
 			);
@@ -83,6 +152,9 @@
 			dependencies = (
 			);
 			name = "jakala-star-wars-project";
+			packageProductDependencies = (
+				4F68DF2D2C903F18004A88BA /* SUICoordinator */,
+			);
 			productName = "jakala-star-wars-project";
 			productReference = 4F82B3572C903E84003CD5FD /* jakala-star-wars-project.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +183,9 @@
 				Base,
 			);
 			mainGroup = 4F82B34E2C903E84003CD5FD;
+			packageReferences = (
+				4F68DF2C2C903F18004A88BA /* XCRemoteSwiftPackageReference "SUICoordinator" */,
+			);
 			productRefGroup = 4F82B3582C903E84003CD5FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +212,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F82B35D2C903E84003CD5FD /* ContentView.swift in Sources */,
+				4F82B35D2C903E84003CD5FD /* ProjectRootView.swift in Sources */,
+				4F68DF392C903F8F004A88BA /* DependencyIdentifier.swift in Sources */,
+				4F68DF452C90411F004A88BA /* JediListService.swift in Sources */,
+				4F68DF3F2C904031004A88BA /* HomePageViewModel.swift in Sources */,
+				4F68DF362C903F8F004A88BA /* DependencyContainer.swift in Sources */,
+				4F68DF432C904117004A88BA /* JediListApiRepo.swift in Sources */,
+				4F68DF372C903F8F004A88BA /* DependencyEnvironment.swift in Sources */,
 				4F82B35B2C903E84003CD5FD /* jakala_star_wars_projectApp.swift in Sources */,
+				4F68DF3A2C903F8F004A88BA /* DependencyInjection.swift in Sources */,
+				4F68DF3C2C903FEE004A88BA /* HomePageView.swift in Sources */,
+				4F68DF382C903F8F004A88BA /* DependencyFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +428,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F68DF2C2C903F18004A88BA /* XCRemoteSwiftPackageReference "SUICoordinator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DerNoah/SUICoordinator";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F68DF2D2C903F18004A88BA /* SUICoordinator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F68DF2C2C903F18004A88BA /* XCRemoteSwiftPackageReference "SUICoordinator" */;
+			productName = SUICoordinator;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4F82B34F2C903E84003CD5FD /* Project object */;
 }
