@@ -23,7 +23,7 @@ extension PeopleListResponseModel {
         let skinColor: String
         let eyeColor: String
         let birthYear: String
-        let gender: Gender
+        let gender: String?
         let homeworldURL: URL
         let filmURLs: [URL]
         
@@ -39,13 +39,5 @@ extension PeopleListResponseModel {
             case homeworldURL = "homeworld"
             case filmURLs = "films"
         }
-    }
-}
-
-extension PeopleListResponseModel.People {
-    enum Gender: String, Decodable {
-        case male
-        case female
-        case none = "n/a"
     }
 }
