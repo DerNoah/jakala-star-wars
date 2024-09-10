@@ -18,9 +18,12 @@ final class PeopleListService {
         AsyncThrowingStream { continuation in
             fetchPeople(completion: { result in
                 switch result {
-                    case let .success(response):
+                    case let .success((response, finished)):
                         let mappedPeople = self.mapPeopleResponse(people: response.results)
                         continuation.yield(mappedPeople)
+                        if finished {
+                            continuation.finish()
+                        }
                     case let .failure(error):
                         continuation.finish(throwing: error)
                 }
@@ -28,13 +31,15 @@ final class PeopleListService {
         }
     }
     
-    private func fetchPeople(givenPageURL: URL? = nil, completion: @escaping (Result<PeopleListResponseModel, Error>) -> Void) {
+    private func fetchPeople(givenPageURL: URL? = nil, completion: @escaping (Result<(PeopleListResponseModel, finished: Bool), Error>) -> Void) {
         Task {
             do {
                 let peopleResponse = try await apiRepo.fetchPeopleList(givenPageURL: givenPageURL)
-                completion(.success(peopleResponse))
                 if let next = peopleResponse.next {
+                    completion(.success((peopleResponse, finished: false)))
                     fetchPeople(givenPageURL: next, completion: completion)
+                } else {
+                    completion(.success((peopleResponse, finished: true)))
                 }
             } catch {
                 completion(.failure(error))
