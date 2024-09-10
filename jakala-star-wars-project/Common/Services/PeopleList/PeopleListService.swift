@@ -62,7 +62,8 @@ final class PeopleListService {
                 eyeColor: people.eyeColor,
                 birthYear: people.birthYear,
                 gender: .init(rawValue: people.gender ?? ""),
-                homeworldURL: people.homeworldURL
+                homeworldURL: people.homeworldURL,
+                vehicleURLs: people.vehicleURLs
             )
         }
     }

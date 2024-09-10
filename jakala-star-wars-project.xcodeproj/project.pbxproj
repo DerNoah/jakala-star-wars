@@ -31,6 +31,12 @@
 		4F68DF672C906A13004A88BA /* DetailPageViewModelArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF662C906A13004A88BA /* DetailPageViewModelArguments.swift */; };
 		4F68DF692C906A8E004A88BA /* DetailPageViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF682C906A8E004A88BA /* DetailPageViewState.swift */; };
 		4F68DF742C907284004A88BA /* jakala_star_wars_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF732C907284004A88BA /* jakala_star_wars_projectTests.swift */; };
+		4F68DF7C2C90C215004A88BA /* VehicleApiRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF7B2C90C215004A88BA /* VehicleApiRepo.swift */; };
+		4F68DF7E2C90C21D004A88BA /* VehicleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF7D2C90C21D004A88BA /* VehicleService.swift */; };
+		4F68DF802C90C2E7004A88BA /* VehicleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF7F2C90C2E7004A88BA /* VehicleResponse.swift */; };
+		4F68DF822C90C46A004A88BA /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF812C90C46A004A88BA /* Vehicle.swift */; };
+		4F68DF842C90C883004A88BA /* VehicleCacheRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF832C90C883004A88BA /* VehicleCacheRepo.swift */; };
+		4F68DF8B2C90CF00004A88BA /* VehicleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF8A2C90CF00004A88BA /* VehicleDetailView.swift */; };
 		4F82B35B2C903E84003CD5FD /* jakala_star_wars_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F82B35A2C903E84003CD5FD /* jakala_star_wars_projectApp.swift */; };
 		4F82B35D2C903E84003CD5FD /* ProjectRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F82B35C2C903E84003CD5FD /* ProjectRootView.swift */; };
 		4F82B35F2C903E86003CD5FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F82B35E2C903E86003CD5FD /* Assets.xcassets */; };
@@ -72,6 +78,12 @@
 		4F68DF682C906A8E004A88BA /* DetailPageViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewState.swift; sourceTree = "<group>"; };
 		4F68DF712C907284004A88BA /* jakala-star-wars-projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "jakala-star-wars-projectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F68DF732C907284004A88BA /* jakala_star_wars_projectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jakala_star_wars_projectTests.swift; sourceTree = "<group>"; };
+		4F68DF7B2C90C215004A88BA /* VehicleApiRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleApiRepo.swift; sourceTree = "<group>"; };
+		4F68DF7D2C90C21D004A88BA /* VehicleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleService.swift; sourceTree = "<group>"; };
+		4F68DF7F2C90C2E7004A88BA /* VehicleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleResponse.swift; sourceTree = "<group>"; };
+		4F68DF812C90C46A004A88BA /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		4F68DF832C90C883004A88BA /* VehicleCacheRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCacheRepo.swift; sourceTree = "<group>"; };
+		4F68DF8A2C90CF00004A88BA /* VehicleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailView.swift; sourceTree = "<group>"; };
 		4F82B3572C903E84003CD5FD /* jakala-star-wars-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jakala-star-wars-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F82B35A2C903E84003CD5FD /* jakala_star_wars_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jakala_star_wars_projectApp.swift; sourceTree = "<group>"; };
 		4F82B35C2C903E84003CD5FD /* ProjectRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectRootView.swift; sourceTree = "<group>"; };
@@ -135,6 +147,7 @@
 		4F68DF402C9040F2004A88BA /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				4F68DF7A2C90C1E4004A88BA /* Vehicle */,
 				4F68DF572C90527F004A88BA /* PeopleFilterService */,
 				4F68DF462C904186004A88BA /* API */,
 				4F68DF412C9040FE004A88BA /* PeopleList */,
@@ -190,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				4F68DF552C904B06004A88BA /* People.swift */,
+				4F68DF812C90C46A004A88BA /* Vehicle.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -205,6 +219,7 @@
 		4F68DF5A2C9055BD004A88BA /* DetailPage */ = {
 			isa = PBXGroup;
 			children = (
+				4F68DF852C90CED2004A88BA /* ViewComponents */,
 				4F68DF5B2C9055C7004A88BA /* DetailPageDestination.swift */,
 				4F68DF612C90561C004A88BA /* DetailPageView.swift */,
 				4F68DF5F2C9055D4004A88BA /* DetailPageViewModel.swift */,
@@ -220,6 +235,25 @@
 				4F68DF732C907284004A88BA /* jakala_star_wars_projectTests.swift */,
 			);
 			path = "jakala-star-wars-projectTests";
+			sourceTree = "<group>";
+		};
+		4F68DF7A2C90C1E4004A88BA /* Vehicle */ = {
+			isa = PBXGroup;
+			children = (
+				4F68DF7B2C90C215004A88BA /* VehicleApiRepo.swift */,
+				4F68DF7D2C90C21D004A88BA /* VehicleService.swift */,
+				4F68DF832C90C883004A88BA /* VehicleCacheRepo.swift */,
+				4F68DF7F2C90C2E7004A88BA /* VehicleResponse.swift */,
+			);
+			path = Vehicle;
+			sourceTree = "<group>";
+		};
+		4F68DF852C90CED2004A88BA /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				4F68DF8A2C90CF00004A88BA /* VehicleDetailView.swift */,
+			);
+			path = ViewComponents;
 			sourceTree = "<group>";
 		};
 		4F82B34E2C903E84003CD5FD = {
@@ -375,19 +409,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F68DF802C90C2E7004A88BA /* VehicleResponse.swift in Sources */,
 				4F68DF5C2C9055C7004A88BA /* DetailPageDestination.swift in Sources */,
 				4F68DF4E2C9043CF004A88BA /* HomePageViewState.swift in Sources */,
 				4F82B35D2C903E84003CD5FD /* ProjectRootView.swift in Sources */,
+				4F68DF822C90C46A004A88BA /* Vehicle.swift in Sources */,
+				4F68DF7C2C90C215004A88BA /* VehicleApiRepo.swift in Sources */,
+				4F68DF8B2C90CF00004A88BA /* VehicleDetailView.swift in Sources */,
 				4F68DF602C9055D4004A88BA /* DetailPageViewModel.swift in Sources */,
 				4F68DF4C2C904324004A88BA /* ListItemView.swift in Sources */,
 				4F68DF392C903F8F004A88BA /* DependencyIdentifier.swift in Sources */,
 				4F68DF452C90411F004A88BA /* PeopleListService.swift in Sources */,
 				4F68DF3F2C904031004A88BA /* HomePageViewModel.swift in Sources */,
+				4F68DF842C90C883004A88BA /* VehicleCacheRepo.swift in Sources */,
 				4F68DF592C90528B004A88BA /* PeopleFilterService.swift in Sources */,
 				4F68DF362C903F8F004A88BA /* DependencyContainer.swift in Sources */,
 				4F68DF512C9044BC004A88BA /* PreviewCoordinator.swift in Sources */,
 				4F68DF432C904117004A88BA /* PeopleListApiRepo.swift in Sources */,
 				4F68DF372C903F8F004A88BA /* DependencyEnvironment.swift in Sources */,
+				4F68DF7E2C90C21D004A88BA /* VehicleService.swift in Sources */,
 				4F68DF652C90564A004A88BA /* DestinationIdentifier.swift in Sources */,
 				4F82B35B2C903E84003CD5FD /* jakala_star_wars_projectApp.swift in Sources */,
 				4F68DF3A2C903F8F004A88BA /* DependencyInjection.swift in Sources */,

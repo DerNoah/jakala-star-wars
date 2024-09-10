@@ -33,7 +33,8 @@ final class jakala_star_wars_projectTests: XCTestCase {
             eyeColor: "green",
             birthYear: "2001",
             gender: .male,
-            homeworldURL: nil
+            homeworldURL: nil,
+            vehicleURLs: []
         )
         let people2 = People(
             id: UUID(),
@@ -45,7 +46,8 @@ final class jakala_star_wars_projectTests: XCTestCase {
             eyeColor: "green",
             birthYear: "2001",
             gender: .male,
-            homeworldURL: nil
+            homeworldURL: nil,
+            vehicleURLs: []
         )
         let people3 = People(
             id: UUID(),
@@ -57,7 +59,8 @@ final class jakala_star_wars_projectTests: XCTestCase {
             eyeColor: "green",
             birthYear: "2001",
             gender: .male,
-            homeworldURL: nil
+            homeworldURL: nil,
+            vehicleURLs: []
         )
             
         let toFilterList = [
@@ -91,7 +94,8 @@ final class jakala_star_wars_projectTests: XCTestCase {
             eyeColor: "green",
             birthYear: "2001",
             gender: .male,
-            homeworldURL: nil
+            homeworldURL: nil,
+            vehicleURLs: []
         )
         let people2 = People(
             id: UUID(),
@@ -103,7 +107,8 @@ final class jakala_star_wars_projectTests: XCTestCase {
             eyeColor: "green",
             birthYear: "2001",
             gender: .male,
-            homeworldURL: nil
+            homeworldURL: nil,
+            vehicleURLs: []
         )
         let people3 = People(
             id: UUID(),
@@ -115,7 +120,8 @@ final class jakala_star_wars_projectTests: XCTestCase {
             eyeColor: "green",
             birthYear: "2001",
             gender: .male,
-            homeworldURL: nil
+            homeworldURL: nil,
+            vehicleURLs: []
         )
         let people4 = People(
             id: UUID(),
@@ -127,7 +133,8 @@ final class jakala_star_wars_projectTests: XCTestCase {
             eyeColor: "green",
             birthYear: "2001",
             gender: .male,
-            homeworldURL: nil
+            homeworldURL: nil,
+            vehicleURLs: []
         )
             
         let toFilterList = [
@@ -163,7 +170,8 @@ final class jakala_star_wars_projectTests: XCTestCase {
             eyeColor: "green",
             birthYear: "2001",
             gender: .male,
-            homeworldURL: nil
+            homeworldURL: nil,
+            vehicleURLs: []
         )
         let people2 = People(
             id: UUID(),
@@ -175,7 +183,8 @@ final class jakala_star_wars_projectTests: XCTestCase {
             eyeColor: "green",
             birthYear: "2001",
             gender: .male,
-            homeworldURL: nil
+            homeworldURL: nil,
+            vehicleURLs: []
         )
         let people3 = People(
             id: UUID(),
@@ -187,7 +196,8 @@ final class jakala_star_wars_projectTests: XCTestCase {
             eyeColor: "green",
             birthYear: "2001",
             gender: .male,
-            homeworldURL: nil
+            homeworldURL: nil,
+            vehicleURLs: []
         )
         let people4 = People(
             id: UUID(),
@@ -199,7 +209,8 @@ final class jakala_star_wars_projectTests: XCTestCase {
             eyeColor: "green",
             birthYear: "2001",
             gender: .male,
-            homeworldURL: nil
+            homeworldURL: nil,
+            vehicleURLs: []
         )
             
         let toFilterList = [
@@ -237,7 +248,8 @@ final class jakala_star_wars_projectTests: XCTestCase {
             eyeColor: "green",
             birthYear: "2001",
             gender: .male,
-            homeworldURL: nil
+            homeworldURL: nil,
+            vehicleURLs: []
         )
         let people2 = People(
             id: UUID(),
@@ -249,7 +261,8 @@ final class jakala_star_wars_projectTests: XCTestCase {
             eyeColor: "green",
             birthYear: "2001",
             gender: .male,
-            homeworldURL: nil
+            homeworldURL: nil,
+            vehicleURLs: []
         )
         let people3 = People(
             id: UUID(),
@@ -261,7 +274,8 @@ final class jakala_star_wars_projectTests: XCTestCase {
             eyeColor: "green",
             birthYear: "2001",
             gender: .male,
-            homeworldURL: nil
+            homeworldURL: nil,
+            vehicleURLs: []
         )
             
         let toFilterList = [
@@ -296,7 +310,8 @@ final class jakala_star_wars_projectTests: XCTestCase {
             eyeColor: "green",
             birthYear: "2001",
             gender: .male,
-            homeworldURL: nil
+            homeworldURL: nil,
+            vehicleURLs: []
         )
         let people2 = People(
             id: UUID(),
@@ -308,7 +323,8 @@ final class jakala_star_wars_projectTests: XCTestCase {
             eyeColor: "green",
             birthYear: "2001",
             gender: .male,
-            homeworldURL: nil
+            homeworldURL: nil,
+            vehicleURLs: []
         )
         let people3 = People(
             id: UUID(),
@@ -320,7 +336,8 @@ final class jakala_star_wars_projectTests: XCTestCase {
             eyeColor: "green",
             birthYear: "2001",
             gender: .male,
-            homeworldURL: nil
+            homeworldURL: nil,
+            vehicleURLs: []
         )
         let people4 = People(
             id: UUID(),
@@ -332,7 +349,8 @@ final class jakala_star_wars_projectTests: XCTestCase {
             eyeColor: "green",
             birthYear: "2001",
             gender: .male,
-            homeworldURL: nil
+            homeworldURL: nil,
+            vehicleURLs: []
         )
             
         let toFilterList = [
@@ -368,7 +386,8 @@ final class jakala_star_wars_projectTests: XCTestCase {
             eyeColor: "green",
             birthYear: "2001",
             gender: .male,
-            homeworldURL: nil
+            homeworldURL: nil,
+            vehicleURLs: []
         )
         let people2 = People(
             id: UUID(),
@@ -380,7 +399,8 @@ final class jakala_star_wars_projectTests: XCTestCase {
             eyeColor: "green",
             birthYear: "2001",
             gender: .male,
-            homeworldURL: nil
+            homeworldURL: nil,
+            vehicleURLs: []
         )
         let people3 = People(
             id: UUID(),
@@ -392,7 +412,8 @@ final class jakala_star_wars_projectTests: XCTestCase {
             eyeColor: "green",
             birthYear: "2001",
             gender: .male,
-            homeworldURL: nil
+            homeworldURL: nil,
+            vehicleURLs: []
         )
         let people4 = People(
             id: UUID(),
@@ -404,7 +425,8 @@ final class jakala_star_wars_projectTests: XCTestCase {
             eyeColor: "green",
             birthYear: "2001",
             gender: .male,
-            homeworldURL: nil
+            homeworldURL: nil,
+            vehicleURLs: []
         )
             
         let toFilterList = [

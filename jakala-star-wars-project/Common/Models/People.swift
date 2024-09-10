@@ -18,6 +18,7 @@ struct People: Hashable {
     let birthYear: String
     let gender: Gender?
     let homeworldURL: URL?
+    let vehicleURLs: [URL]
 }
 
 enum Gender: String {

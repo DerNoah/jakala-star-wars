@@ -12,4 +12,6 @@ struct DetailPageViewState {
     
     var biographyName: String = ""
     var biography: String = ""
+    
+    var vehicleModels: [VehicleDetailView.Model] = []
 }

@@ -26,6 +26,7 @@ extension PeopleListResponseModel {
         let gender: String?
         let homeworldURL: URL
         let filmURLs: [URL]
+        let vehicleURLs: [URL]
         
         enum CodingKeys: String, CodingKey {
             case name
@@ -38,6 +39,7 @@ extension PeopleListResponseModel {
             case gender
             case homeworldURL = "homeworld"
             case filmURLs = "films"
+            case vehicleURLs = "vehicles"
         }
     }
 }

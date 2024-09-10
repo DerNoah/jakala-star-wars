@@ -14,6 +14,11 @@ struct DetailPageDestination: Destination {
     let arguments: DetailPageViewModelArguments
     
     func makeView(with dependencies: DependencyContainer, coordinator: any Coordinator) -> DetailPageView {
-        DetailPageView(viewModel: DetailPageViewModel(arguments: arguments))
+        DetailPageView(
+            viewModel: DetailPageViewModel(
+                arguments: arguments,
+                vehicleService: dependencies.resolve(VehicleService.self)
+            )
+        )
     }
 }

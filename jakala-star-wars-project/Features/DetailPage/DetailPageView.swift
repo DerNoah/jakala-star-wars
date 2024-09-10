@@ -11,34 +11,53 @@ struct DetailPageView: View {
     @ObservedObject var viewModel: DetailPageViewModel
     
     var body: some View {
-        ZStack {
-            Color.orange
-                .ignoresSafeArea()
-            
-            ScrollView {
-                VStack() {
-                    Text(viewModel.viewState.title)
-                        .font(.largeTitle)
-                        .bold()
-                        .padding(.top, 120)
-                    
-                    VStack(alignment: .leading) {
-                        Text("About \(viewModel.viewState.biographyName)")
-                            .font(.headline)
-                            .bold()
-                        Text(viewModel.viewState.biography)
-                    }
-                    .foregroundStyle(.white)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding()
-                    .background(RoundedRectangle(cornerRadius: 20).foregroundStyle(.gray))
-                    .padding()
-                    
-                    Spacer()
+        ScrollView {
+            VStack(spacing: 80) {
+                Text(viewModel.viewState.title)
+                    .font(.largeTitle)
+                    .bold()
+                
+                peopleSection
+                
+                if !viewModel.viewState.vehicleModels.isEmpty {
+                    vehicleSection
                 }
+                
+                Spacer()
             }
+            .padding(.horizontal)
+            .padding(.top, 128)
         }
         .ignoresSafeArea(.all, edges: .top)
+        .onAppear(perform: viewModel.onAppear)
+    }
+    
+    private var peopleSection: some View {
+        VStack(alignment: .leading) {
+            Text("About \(viewModel.viewState.biographyName)")
+                .font(.headline)
+                .bold()
+            Text(viewModel.viewState.biography)
+        }
+        .foregroundStyle(.white)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding()
+        .background(RoundedRectangle(cornerRadius: 20).foregroundStyle(.gray))
+    }
+    
+    private var vehicleSection: some View {
+        VStack(alignment: .leading) {
+            Text("Vehicles")
+                .font(.headline)
+                .bold()
+            
+            LazyVGrid(columns: Array(repeating: GridItem(), count: 2)) {
+                ForEach(viewModel.viewState.vehicleModels) { model in
+                    VehicleDetailView(model: model)
+                }
+            }
+            .animation(.default, value: viewModel.viewState.vehicleModels)
+        }
     }
 }
 
@@ -56,9 +75,11 @@ struct DetailPageView: View {
                     eyeColor: "green",
                     birthYear: "41.9 BBY",
                     gender: .male,
-                    homeworldURL: nil
+                    homeworldURL: nil,
+                    vehicleURLs: []
                 )
-            )
+            ),
+            vehicleService: previewDependencyContainer.resolve(VehicleService.self)
         )
     )
 }
