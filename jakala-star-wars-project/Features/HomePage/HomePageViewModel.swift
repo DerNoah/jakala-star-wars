@@ -32,7 +32,7 @@ final class HomePageViewModel: ObservableObject {
         fetchTask?.cancel()
         fetchTask = Task {
             do {
-                let people = try! await self.peopleListService.fetchPeople()
+                let people = try await self.peopleListService.fetchPeople()
                 
                 await peopleFetched(people: people)
             } catch {
