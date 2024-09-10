@@ -50,12 +50,15 @@ final class HomePageViewModel: ObservableObject {
         guard fetchedPeople.isEmpty else { return }
         
         fetchTask?.cancel()
+        
+        let peopleFetchStream = peopleListService.fetchAllPeople()
         fetchTask = Task {
             do {
-                let people = try await self.peopleListService.fetchPeople()
-                
-                await peopleFetched(people: people)
+                for try await people in peopleFetchStream {
+                    await peopleFetched(people: people)
+                }
             } catch {
+                print(error)
                 // do error handling
             }
         }
@@ -63,7 +66,7 @@ final class HomePageViewModel: ObservableObject {
     
     @MainActor
     private func peopleFetched(people: [People]) {
-        fetchedPeople = people
+        fetchedPeople += people
         updateViewState()
     }
     

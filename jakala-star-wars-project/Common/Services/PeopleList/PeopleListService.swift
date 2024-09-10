@@ -14,9 +14,43 @@ final class PeopleListService {
         self.apiRepo = apiRepo
     }
     
+    func fetchAllPeople() -> AsyncThrowingStream<[People], Error> {
+        AsyncThrowingStream { continuation in
+            fetchPeople(completion: { result in
+                switch result {
+                    case let .success(response):
+                        let mappedPeople = self.mapPeopleResponse(people: response.results)
+                        continuation.yield(mappedPeople)
+                    case let .failure(error):
+                        continuation.finish(throwing: error)
+                }
+            })
+        }
+    }
+    
+    private func fetchPeople(givenPageURL: URL? = nil, completion: @escaping (Result<PeopleListResponseModel, Error>) -> Void) {
+        Task {
+            do {
+                let peopleResponse = try await apiRepo.fetchPeopleList(givenPageURL: givenPageURL)
+                completion(.success(peopleResponse))
+                if let next = peopleResponse.next {
+                    fetchPeople(givenPageURL: next, completion: completion)
+                }
+            } catch {
+                completion(.failure(error))
+            }
+        }
+    }
+    
     func fetchPeople() async throws -> [People] {
         let peopleResponse = try await apiRepo.fetchPeopleList()
-        let mappedPeople = peopleResponse.results.compactMap { people -> People? in
+        let mappedPeople = mapPeopleResponse(people: peopleResponse.results)
+        
+        return mappedPeople
+    }
+    
+    private func mapPeopleResponse(people: [PeopleListResponseModel.People]) -> [People] {
+        people.compactMap { people -> People? in
             guard let height = Int(people.height),
                   let mass = Int(people.mass) else { return nil }
             
@@ -29,12 +63,10 @@ final class PeopleListService {
                 skinColor: people.skinColor,
                 eyeColor: people.eyeColor,
                 birthYear: people.birthYear,
-                gender: .init(rawValue: people.gender.rawValue),
+                gender: .init(rawValue: people.gender ?? ""),
                 homeworldURL: people.homeworldURL
             )
         }
-        
-        return mappedPeople
     }
 }
 
