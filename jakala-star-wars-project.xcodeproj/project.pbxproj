@@ -30,11 +30,22 @@
 		4F68DF652C90564A004A88BA /* DestinationIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF642C90564A004A88BA /* DestinationIdentifier.swift */; };
 		4F68DF672C906A13004A88BA /* DetailPageViewModelArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF662C906A13004A88BA /* DetailPageViewModelArguments.swift */; };
 		4F68DF692C906A8E004A88BA /* DetailPageViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF682C906A8E004A88BA /* DetailPageViewState.swift */; };
+		4F68DF742C907284004A88BA /* jakala_star_wars_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F68DF732C907284004A88BA /* jakala_star_wars_projectTests.swift */; };
 		4F82B35B2C903E84003CD5FD /* jakala_star_wars_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F82B35A2C903E84003CD5FD /* jakala_star_wars_projectApp.swift */; };
 		4F82B35D2C903E84003CD5FD /* ProjectRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F82B35C2C903E84003CD5FD /* ProjectRootView.swift */; };
 		4F82B35F2C903E86003CD5FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F82B35E2C903E86003CD5FD /* Assets.xcassets */; };
 		4F82B3622C903E86003CD5FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F82B3612C903E86003CD5FD /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F68DF752C907284004A88BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F82B34F2C903E84003CD5FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F82B3562C903E84003CD5FD;
+			remoteInfo = "jakala-star-wars-project";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4F68DF2F2C903F8F004A88BA /* DependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
@@ -59,6 +70,8 @@
 		4F68DF642C90564A004A88BA /* DestinationIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationIdentifier.swift; sourceTree = "<group>"; };
 		4F68DF662C906A13004A88BA /* DetailPageViewModelArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewModelArguments.swift; sourceTree = "<group>"; };
 		4F68DF682C906A8E004A88BA /* DetailPageViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewState.swift; sourceTree = "<group>"; };
+		4F68DF712C907284004A88BA /* jakala-star-wars-projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "jakala-star-wars-projectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F68DF732C907284004A88BA /* jakala_star_wars_projectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jakala_star_wars_projectTests.swift; sourceTree = "<group>"; };
 		4F82B3572C903E84003CD5FD /* jakala-star-wars-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jakala-star-wars-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F82B35A2C903E84003CD5FD /* jakala_star_wars_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jakala_star_wars_projectApp.swift; sourceTree = "<group>"; };
 		4F82B35C2C903E84003CD5FD /* ProjectRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectRootView.swift; sourceTree = "<group>"; };
@@ -67,6 +80,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4F68DF6E2C907284004A88BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4F82B3542C903E84003CD5FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -194,10 +214,19 @@
 			path = DetailPage;
 			sourceTree = "<group>";
 		};
+		4F68DF722C907284004A88BA /* jakala-star-wars-projectTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F68DF732C907284004A88BA /* jakala_star_wars_projectTests.swift */,
+			);
+			path = "jakala-star-wars-projectTests";
+			sourceTree = "<group>";
+		};
 		4F82B34E2C903E84003CD5FD = {
 			isa = PBXGroup;
 			children = (
 				4F82B3592C903E84003CD5FD /* jakala-star-wars-project */,
+				4F68DF722C907284004A88BA /* jakala-star-wars-projectTests */,
 				4F82B3582C903E84003CD5FD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -206,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				4F82B3572C903E84003CD5FD /* jakala-star-wars-project.app */,
+				4F68DF712C907284004A88BA /* jakala-star-wars-projectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -234,6 +264,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4F68DF702C907284004A88BA /* jakala-star-wars-projectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F68DF772C907284004A88BA /* Build configuration list for PBXNativeTarget "jakala-star-wars-projectTests" */;
+			buildPhases = (
+				4F68DF6D2C907284004A88BA /* Sources */,
+				4F68DF6E2C907284004A88BA /* Frameworks */,
+				4F68DF6F2C907284004A88BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F68DF762C907284004A88BA /* PBXTargetDependency */,
+			);
+			name = "jakala-star-wars-projectTests";
+			productName = "jakala-star-wars-projectTests";
+			productReference = 4F68DF712C907284004A88BA /* jakala-star-wars-projectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4F82B3562C903E84003CD5FD /* jakala-star-wars-project */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F82B3652C903E86003CD5FD /* Build configuration list for PBXNativeTarget "jakala-star-wars-project" */;
@@ -264,6 +312,10 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					4F68DF702C907284004A88BA = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 4F82B3562C903E84003CD5FD;
+					};
 					4F82B3562C903E84003CD5FD = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -286,11 +338,19 @@
 			projectRoot = "";
 			targets = (
 				4F82B3562C903E84003CD5FD /* jakala-star-wars-project */,
+				4F68DF702C907284004A88BA /* jakala-star-wars-projectTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4F68DF6F2C907284004A88BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4F82B3552C903E84003CD5FD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,6 +363,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4F68DF6D2C907284004A88BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F68DF742C907284004A88BA /* jakala_star_wars_projectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4F82B3532C903E84003CD5FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -336,7 +404,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4F68DF762C907284004A88BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F82B3562C903E84003CD5FD /* jakala-star-wars-project */;
+			targetProxy = 4F68DF752C907284004A88BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		4F68DF782C907284004A88BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RK2S63Y9WQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incsoftwaresolutions.jakala-star-wars-projectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jakala-star-wars-project.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/jakala-star-wars-project";
+			};
+			name = Debug;
+		};
+		4F68DF792C907284004A88BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RK2S63Y9WQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incsoftwaresolutions.jakala-star-wars-projectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jakala-star-wars-project.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/jakala-star-wars-project";
+			};
+			name = Release;
+		};
 		4F82B3632C903E86003CD5FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -517,6 +629,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4F68DF772C907284004A88BA /* Build configuration list for PBXNativeTarget "jakala-star-wars-projectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F68DF782C907284004A88BA /* Debug */,
+				4F68DF792C907284004A88BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4F82B3522C903E84003CD5FD /* Build configuration list for PBXProject "jakala-star-wars-project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
