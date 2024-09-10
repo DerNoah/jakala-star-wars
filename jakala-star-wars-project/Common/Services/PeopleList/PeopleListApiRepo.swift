@@ -14,7 +14,7 @@ final class PeopleListApiRepo {
         self.apiClient = apiClient
     }
     
-    func fetchJediList() async throws -> PeopleListResponseModel {
+    func fetchPeopleList() async throws -> PeopleListResponseModel {
         guard let url = URL(string: "https://swapi.dev/api/people") else { throw Error.invalidURL }
         
         return try await apiClient.request(url)

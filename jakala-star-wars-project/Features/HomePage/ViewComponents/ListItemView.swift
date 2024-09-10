@@ -12,17 +12,6 @@ struct ListItemView: View {
     
     var body: some View {
         HStack(spacing: 12) {
-            AsyncImage(url: model.imageURL) { response in
-                response.image?
-                    .resizable()
-                    .scaledToFill()
-            }
-            .frame(width: 80, height: 80, alignment: .center)
-            .clipped()
-            .clipShape(RoundedRectangle(cornerRadius: 10))
-            .padding(.vertical)
-            .padding(.leading)
-            
             Text(model.title)
                 .frame(maxHeight: .infinity, alignment: .top)
                 .padding(.top, 22)
@@ -43,6 +32,5 @@ extension ListItemView {
     struct Model: Hashable, Identifiable {
         let id: UUID
         let title: String
-        let imageURL: URL?
     }
 }
